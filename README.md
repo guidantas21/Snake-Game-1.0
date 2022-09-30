@@ -1,14 +1,14 @@
 # Snake Game Version 1.0
 
 ## Project Overview
-- 1. Concept
+- 1. ### Concept
     - The snake game is a classic and the challenge of programming it is definitely a milestone for me. It's is a great and fun project to exercise the implementation of Object Oriented Programming, so I built this game completely class-based (maybe that's not the best approach to implement it, but that's how I'm going to do it).
 
-- 2. Technology
+- 2. ### Technology
     - In view of the simplicity of this game, Python is a great option to do it, mainly because of the Pygame library which makes the implementation of simple games very straightforward and easy (the performance is the best, but for this game that's not a problem). 
 
-- 3. Implementation
-    - Game window
+- 3. ### Implementation
+    - #### Game window
         - The screen (game window) is a square divided in multiple blocks
         - Exemple:
             ```
@@ -31,13 +31,13 @@
             +----+----+----+----+----+----+
             ```
 
-    - Vectors
+    - #### Vectors
         - A 2 dimensional vector stores a position (x,y) in blocks (block size = 40 pixels)
         - Example: 
             - Vector2(2,3) -> (x = 2 blocks, y = 3 blocks)
             - The real postion (in pixels) of this vector would be (2 * block size, 3 * block size) -> (80, 120)
 
-    - Snake class
+    - #### Snake class
         - The body of the snake is a list of vectors
             - Each vector represents the postion (x,y) of the snake block on the screen
 
@@ -56,12 +56,12 @@
                 - Get the postion (x, y) in pixels
                 - Each rect is drawn on the screen
 
-    - Fruit class
+    - #### Fruit class
         - Generates random x and y positions
         - Creates a fruit rect in the generated position
         - Draws the fruit rect on the screen
     
-    - Game class
+    - #### Game class
         - Contains the pygame setup and most of the game logic
 
         - Tracks the events (Event loop)
@@ -90,12 +90,12 @@
 
         - Draw all the elements (score, snake, fruit) on the screen 
 
-    - Settings file
+    - #### Settings file
         - Almost all the graphics of this game can be customized by changing the varibles of this file
         - Screen size, colors, text, text position, fonts (font type, color, size), images
 
-- 4. Ideas for the next version
-    - Score rank
+- 4. ### Ideas for the next version
+    - #### Score rank
         - A feature that I think would be nice to  add is a score rank, which the game would save the 5 five best scores in a text file or JSON file
         - Everytime the player finishes a game, his final score would be compared the the 5 best, if the score is greater than any of them, would replace the score lower than it
 
