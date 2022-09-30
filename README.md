@@ -95,7 +95,7 @@
         - Screen size, colors, text, text position, fonts (font type, color, size), images
 
 - 4. Ideas for the next version
-    1. Score rank
+    - Score rank
         - A feature that I think would be nice to  add is a score rank, which the game would save the 5 five best scores in a text file or JSON file
         - Everytime the player finishes a game, his final score would be compared the the 5 best, if the score is greater than any of them, would replace the score lower than it
 
